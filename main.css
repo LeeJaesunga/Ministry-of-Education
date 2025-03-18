@@ -71,6 +71,57 @@ height: max-content;
     margin: 0 auto;
 }
 
+#root h1 {
+    position: absolute;
+    left: 0;
+    top: 8.7em;
+    z-index: 700;
+    height: 7.8em;
+    font-size: 1rem;
+    color: transparent;
+}
+
+#root h1>a {
+    display: block;
+    position: relative;
+    width: 12.5em;
+    height: 100%;
+    color: transparent;
+}
+
+#root h1>a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -34px;
+    top: 4%;
+    width: 100%;
+    height: 3.8em;
+    background-image: url("/img/교육부_국_좌우.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    transform: translateY(-50%);
+}
+
+.mois {
+    position: absolute;
+    left: 11%;
+    top: 7.8em;
+    font-size: 1rem;
+    z-index: 700;
+    cursor: pointer;
+}
+
+.mois a {
+    display: inline-block;
+    width: 120px;
+    height: 42px;
+    background: url("/img/nation_slogan.png") 0 0 no-repeat;
+    background-size: contain;
+    transition: width 0.3s;
+}
+
 #root #header>[data-item="1"]>.layout:before {
     content: "";
     display: block;
@@ -152,7 +203,7 @@ a {
     position: relative;
     z-index: 100;
     max-width: 33%;
-    height: 3.9rem;
+    height: 50px;
     margin: 0 auto;
 }
 
@@ -168,7 +219,7 @@ fieldset>legend {
     position: relative;
     z-index: 0;
     width: 100%;
-    height: 3.9rem;
+    height: 50px;
     line-height: 4.9rem;
     padding: 0 0 0 0.5rem;
     font-size: 17px;
@@ -290,9 +341,86 @@ fieldset>legend {
 }
 
 .layout-sns > [data-js="sns"] li a {
-    width: 3.2em;
-    height: 3.2em;
+    width: 36px;
+    height: 36px;
     transition: box-shadow .3s linear;
     background-color: none;
     box-shadow: none;
 }
+#root #header>[data-item="2"] {
+    position: relative;
+    height: 5.8rem;
+    border-top: 1px solid #E5E5E5;
+    background-color: #fff;
+}
+#root #header>[data-item="2"] .menu {
+    position: relative;
+    z-index: 500;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    outline: 0;
+}
+#root #header>[data-item="2"] .menu>ul {
+    display: inline-block;
+    
+}
+#root #header>[data-item="2"] .menu>ul>li {
+    display: inline-block;
+    padding: 0px 2rem;
+    vertical-align: top;
+}
+#root #header>[data-item="2"] .menu>ul>li>a {
+    display: block;
+    position: relative;
+    z-index: 600;
+    line-height: 5.4rem;
+}
+#root #header>[data-item="2"] .menu>ul>li>a>span {
+    font-weight: bold;
+    font-size: 21px;
+    color: #000;
+}
+#root #header>[data-item="2"] [data-btn=allMenu] {
+    position: absolute;
+    right: calc(50% -(1440px / 2));
+    right: 240px;
+    top: 3rem;
+    z-index: 700;
+    transform: translateY(-50%);
+}
+[data-btn=allMenu] {
+    display: inline-block;
+    position: relative;
+}
+[data-btn] {
+    overflow: hidden;
+    font-size: .6666666667em;
+}
+[data-btn=allMenu]>span {
+    display: block;
+    line-height: 5rem;
+    padding-left: 2.8rem;
+    font-size: 21px;
+    color: #000;
+}
+[data-btn=allMenu]>span:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    width: 1.8rem;
+    height: 1.5rem;
+    background-image: url("/img/free-icon-menu-16815590.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    transform: translateY(-50%);
+}
+
+ #middle .layout {
+    padding: 5rem 0 6rem;
+}
+
+
