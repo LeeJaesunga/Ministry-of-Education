@@ -1,0 +1,298 @@
+/* 헤더 */
+
+body {
+    background-color: #E8EFF5;
+    height: 100%;
+    line-height: 1.6;
+    color: #1a1a1a;
+}
+
+#root {
+    background-color: #E8EFF5;
+    transition: margin-top .3s linear;
+    overflow: hidden;
+    position: relative;
+}
+
+#root #header {
+    background-color: #fff;
+    box-shadow: .4em .4em .3em rgba(0, 0, 0, .02);
+}
+
+#root .layout {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+#header>.ev_box{
+width: 100%;
+background-color: #edf1f5;
+height: max-content;
+}
+
+#header>.ev_box>.logo_gover {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    /* padding-left: 5em; */
+    font-size: inherit;
+    background-repeat: no-repeat;
+    background-position: center left;
+    height: 42px;
+}
+
+#header>.ev_box>.logo_gover>div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#header>.ev_box>.logo_gover>div>img {
+    width: 30px;
+    margin-right: 9px;
+}
+
+#header>.ev_box>.logo_gover>div>span {
+    font-size: 15px;
+    color: #555;
+}
+
+#root #header>[data-item="1"] {
+    height: 5.7rem;
+}
+
+#root #header>[data-item]>.layout {
+    height: 100%;
+}
+#root .layout {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+#root #header>[data-item="1"]>.layout:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: calc(50% - 10000px);
+    top: 0;
+    z-index: 60;
+    width: 20000px;
+    height: calc(100% + 1px);
+    background-color: #fff;
+}
+
+#root #header>[data-item="1"]>.layout>[data-item="1"] {
+    left: 0;
+    z-index: 800;
+}
+#root #header>[data-item="1"]>.layout>[data-item] {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#root #header>[data-item="1"]>.layout>[data-item="1"]>ul>li {
+    float: left;
+    position: relative;
+    line-height: 2.7rem;
+    font-size: 16px;
+}
+li {
+    list-style: none;
+}
+
+#root #header>[data-item="1"]>.layout>[data-item="1"]>ul>li a {
+    color: #000;
+}
+a {
+    text-decoration: none;
+}
+
+#root #header>[data-item="1"]>.layout>[data-item="1"]>ul>li:nth-child(n+2) {
+    padding-left: 26px;
+}
+#root #header>[data-item="1"]>.layout>[data-item="1"]>ul>li {
+    float: left;
+    position: relative;
+    line-height: 44px;
+    font-size: 16px;
+}
+
+#root #header>[data-item="1"]>.layout>[data-item="1"]>ul>li:nth-child(n+2):before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    width: 1px;
+    height: 50%;
+    background-color: #D2D2D2;
+    transform: translateY(-50%);
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+#root #header>[data-item="1"]>.layout>[data-item="1"]>ul>li .selectbox {
+    position: relative;
+    z-index: 400;
+}
+
+#root #header>[data-item="1"]>.layout>[data-item="1"]>ul>li .selectbox>strong>a {
+    display: block;
+    padding: 0px 2px;
+}
+
+#root #header>[data-item="1"]>.layout>[data-item="2"] {
+    overflow: hidden;
+}
+#root #header>[data-item="1"]>.layout>[data-item="2"] {
+    position: relative;
+    z-index: 100;
+    max-width: 33%;
+    height: 3.9rem;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset>legend {
+    display: none;
+}
+
+#root #header>[data-item="1"]>.layout>[data-item="2"] input[type=text] {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 3.9rem;
+    line-height: 4.9rem;
+    padding: 0 0 0 0.5rem;
+    font-size: 17px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    color: #000;
+    background-color: #F2F2F2;
+    border-radius: 2.3rem;
+}
+
+#root #header>[data-item="1"]>.layout>[data-item="2"] input[type=submit] {
+    overflow: hidden;
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    text-align: left;
+    text-indent: -1000px;
+    border: none;
+    background-color: transparent;
+    /* background-image: url("../Ministry-of-Education/search.svg"); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    transform: translateY(-50%);
+}
+#root #header>[data-item="1"]>.layout>[data-item="3"] {
+    right: 0;
+    z-index: 100;
+}
+#root #header>[data-item="1"]>.layout>[data-item="3"]>ul>li {
+    float: left;
+}
+[data-sns=yo][data-type="w"] {
+    background-image: url("/img/sns_3.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+[data-sns=yo] {
+    /* background-color: #E44; */
+}
+[data-sns] {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    width: 39px;
+    height: 50px;
+    /* background-color: #ddd; */
+    border-radius: 50%;
+    margin: 0px 3px;
+}
+
+[data-sns=in][data-type="w"] {
+    background-image: url("/img/sns_7.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+[data-sns=in] {
+    /* background-color: #8F23BD; */
+}
+
+[data-sns=bl][data-type="w"] {
+    background-image: url("/img/sns_5.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+[data-sns=bl] {
+    /* background-color: #23AA36; */
+}
+
+[data-sns=fa][data-type="w"] {
+    background-image: url("/img/sns_1.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+[data-sns=fa] {
+    /* background-color: #3A589E; */
+}
+
+[data-sns=ka][data-type="w"] {
+    background-image: url("/img/sns_4.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+[data-sns=ka] {
+    /* background-color: #F8C513; */
+}
+
+[data-sns=be][data-type="w"] {
+    background-image: url("/img/sns_5.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+[data-sns=be] {
+    /* background-color: #3CC44F; */
+}
+
+.layout-sns > [data-js="sns"] {
+    position: fixed;
+    top: 50%;
+    right: 2rem;
+    z-index: 555;
+    transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.layout-sns > [data-js="sns"] li {
+    margin-bottom: 1rem;
+}
+
+.layout-sns > [data-js="sns"] li a {
+    width: 3.2em;
+    height: 3.2em;
+    transition: box-shadow .3s linear;
+    background-color: none;
+    box-shadow: none;
+}
